@@ -1,4 +1,4 @@
-# 🚗 차량 이미지 분류 요약 / Vehicle Image Classification Summary
+# 차량 이미지 분류 요약 / Vehicle Image Classification Summary
 
 > ⚠️ **대회 규정상 데이터 및 소스 코드는 공개하지 않습니다.**  
 > ⚠️ **Due to competition rules, dataset and source code cannot be shared.**
@@ -9,13 +9,13 @@
 
 ---
 
-## 📌 프로젝트 개요 / Project Overview
+## 프로젝트 개요 / Project Overview
 
 TBC
 
 ---
 
-## 🧠 핵심 전략 / Key Strategies
+## 핵심 전략 / Key Strategies
 
 TBC
 
@@ -24,7 +24,7 @@ For detailed pseudocode, see [`pseudocode.md`](./pseudocode.md).
 
 ---
 
-## 🔒 참고 사항 / Notes
+## 참고 사항 / Notes
 
 - 대회 규정을 준수하여 원본 데이터 및 소스 코드는 포함하지 않았습니다.  
 - This summary respects competition confidentiality by excluding raw data and source code.
