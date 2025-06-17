@@ -20,11 +20,11 @@ TBC
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+**핵심 기술**: PyTorch 기반 딥러닝, 컴퓨터 비전 모델 (ResNet, EfficientNet)  
+**데이터 파이프라인**: Python 기반 전처리 (NumPy/Pandas)  
+**평가 지표**: scikit-learn 기반 모델 성능 분석
 
 ---
 
@@ -34,7 +34,7 @@ TBC
 
 ---
 
-## 더 자세히 보기
+## 자세한 내용
 - **[결과 요약](summary_report.md)** - 문제 정의와 전체 결과 요약
 - **[문제해결 과정](troubleshooting.md)** - 기술적/데이터 문제와 해결 방법
 - **[기술 구현](pseudocode.md)** - 의사코드, 아키텍처
