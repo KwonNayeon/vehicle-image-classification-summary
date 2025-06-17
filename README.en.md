@@ -1,22 +1,22 @@
-# 차량 이미지 분류 프로젝트
+# Vehicle Image Classification Project
 
-한국어 | [English](README.en.md)
+[한국어](README.md) | English
 
-> ⚠️ **대회 규정상 데이터 및 소스 코드는 공개하지 않습니다.**
+> ⚠️ **Due to competition rules, dataset and source code cannot be shared.**
 
 <!--
-> 본 레포지토리는 프로젝트 개요와 의사코드만 포함합니다.
+> This repository contains only high-level summaries and pseudocode.
 -->
 
 ---
 
-## 프로젝트 개요
+## Project Overview
 
 TBC
 
 ---
 
-## 사용 기술
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -28,20 +28,20 @@ TBC
 
 ---
 
-## 핵심 전략
+## Key Strategies
 
 TBC
 
 ---
 
-## 더 자세히 보기
-- **[결과 요약](summary_report.md)** - 문제 정의와 전체 결과 요약
-- **[문제해결 과정](troubleshooting.md)** - 기술적/데이터 문제와 해결 방법
-- **[기술 구현](pseudocode.md)** - 의사코드, 아키텍처
-- **[결과 차트](assets/)** - 모델 성능 및 학습 과정 시각화
+## Learn More
+- **[Summary Report](summary_report.en.md)** - Problem definition and overall results
+- **[Troubleshooting Process](troubleshooting.en.md)** - Technical/data challenges and solutions
+- **[Technical Implementation](pseudocode.md)** - Pseudocode and architecture
+- **[Results Charts](assets/)** - Model performance and training process visualization
 
 ---
 
-## 참고 사항
+## Notes
 
-- 대회 규정을 준수하여 원본 데이터 및 소스 코드는 포함하지 않았습니다.
+- This summary respects competition confidentiality by excluding raw data and source code.
