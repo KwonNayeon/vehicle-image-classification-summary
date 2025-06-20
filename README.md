@@ -1,6 +1,6 @@
 ![Thumbnail-Korean](assets/thumbnail-ko.jpg)
 
-# 차량 이미지 분류 프로젝트
+# 중고차 모델 분류 프로젝트
 
 한국어 | [English](README.en.md)
 

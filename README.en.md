@@ -1,6 +1,6 @@
 ![Thumbnail-English](assets/thumbnail-en.jpg)
 
-# Vehicle Image Classification Project
+# Used Car Model Classification Project
 
 [한국어](README.md) | English
 
