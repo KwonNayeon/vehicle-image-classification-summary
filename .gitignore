@@ -1,4 +1,5 @@
 .DS_Store
 
 assets/*
-!assets/.gitkeep
+!assets/thumbnail-en.jpg
+!assets/thumbnail-ko.jpg

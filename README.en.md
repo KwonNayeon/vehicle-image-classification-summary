@@ -1,3 +1,5 @@
+![Thumbnail-English](assets/thumbnail-en.jpg)
+
 # Vehicle Image Classification Project
 
 [한국어](README.md) | English
