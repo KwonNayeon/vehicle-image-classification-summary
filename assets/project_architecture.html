@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Car Classification - Architecture by Phases</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .page {
+            max-width: 1000px;
+            width: 1000px;
+            height: 700px;
+            margin: 0 auto 40px auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .page:last-child {
+            margin-bottom: 0;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 25px;
+            flex-shrink: 0;
+        }
+        
+        .project-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .phase-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 8px;
+        }
+        
+        .phase-subtitle {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .flow-container {
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        .flow-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .box {
+            background: white;
+            border: 3px solid #3498db;
+            border-radius: 12px;
+            padding: 15px 20px;
+            min-width: 130px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            line-height: 1.3;
+        }
+        
+        .box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .data-box {
+            border-color: #e74c3c;
+            color: #e74c3c;
+            background: #fdf2f2;
+        }
+        
+        .model-box {
+            border-color: #f39c12;
+            color: #f39c12;
+            background: #fef9e7;
+        }
+        
+        .process-box {
+            border-color: #27ae60;
+            color: #27ae60;
+            background: #eafaf1;
+        }
+        
+        .problem-box {
+            border-color: #8e44ad;
+            color: #8e44ad;
+            background: #f8f4ff;
+        }
+        
+        .solution-box {
+            border-color: #2ecc71;
+            color: #2ecc71;
+            background: #f0fff4;
+        }
+        
+        .trouble-indicator {
+            border-color: #ff4757;
+            color: #ff4757;
+            background: #ffe6e6;
+            position: relative;
+        }
+        
+        .trouble-indicator::before {
+            content: "⚠️";
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            font-size: 18px;
+        }
+        
+        .final-output {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: 3px solid #667eea;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .decision-diamond {
+            background: #ff6b6b;
+            color: white;
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            font-size: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            line-height: 1.2;
+        }
+        
+        .arrow {
+            font-size: 28px;
+            color: #7f8c8d;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        .vertical-arrow {
+            font-size: 28px;
+            color: #7f8c8d;
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .parallel-models {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
+        .model-pipeline {
+            background: #f8f9ff;
+            border: 2px dashed #3498db;
+            border-radius: 15px;
+            padding: 20px;
+            min-width: 250px;
+            flex: 1;
+            max-width: 300px;
+        }
+        
+        .model-pipeline h4 {
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .pipeline-step {
+            margin: 12px 0;
+            text-align: center;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .metric {
+            background: #e8f5e8;
+            border: 2px solid #27ae60;
+            color: #27ae60;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .future-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { 
+                box-shadow: none;
+                border: 1px solid #ddd;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Phase 1: Data Preparation -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">📊 Phase 1: Data Preparation</div>
+            <div class="phase-subtitle">Dataset Processing & Sampling Strategy</div>
+        </div>
+        
+        <div class="content">
+            <div class="flow-container">
+                <div class="flow-row">
+                    <div class="box data-box">Raw Dataset<br>33,137 images<br>396 car models</div>
+                    <div class="arrow">→</div>
+                    <div class="box process-box">Data Cleaning<br>& Quality Control</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="decision-diamond">Resource<br>Check<br>& Planning</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box solution-box">Random Sampling<br>10,000 images<br>≥20 per class</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 2: Initial Approach -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">🎯 Phase 2: Initial Approach</div>
+            <div class="phase-subtitle">YOLO Strategy → Switched to Classification</div>
+        </div>
+        
+        <div class="content">
+            <div class="flow-container">
+                <div class="flow-row">
+                    <div class="box model-box">YOLO Object Detection<br>Strategy</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box trouble-indicator">Roboflow Auto-labeling<br>Requires Paid Version</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box problem-box">Manual Labeling<br>33K images<br>Too Large Scale</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box solution-box">Switched to<br>Image Classification<br>No Labels Required</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 3: Classification Architecture -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">🤖 Phase 3: Classification Architecture</div>
+            <div class="phase-subtitle">Parallel Model Development</div>
+        </div>
+        
+        <div class="content">
+            <div class="parallel-models">
+                <div class="model-pipeline">
+                    <h4>🚀 EfficientNet Pipeline</h4>
+                    <div class="pipeline-step">
+                        <div class="box model-box">EfficientNetB7</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box trouble-indicator">4+ hrs/epoch<br>Session Timeouts</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box solution-box">EfficientNetB0<br>Epochs: 50→20</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box final-output">Final<br>Model A</div>
+                    </div>
+                </div>
+                
+                <div class="model-pipeline">
+                    <h4>🏗️ ResNet Pipeline</h4>
+                    <div class="pipeline-step">
+                        <div class="box model-box">ResNet50</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box trouble-indicator">3+ hrs/epoch<br>GPU Instability</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box solution-box">ResNet50<br>Epochs: 25→5</div>
+                    </div>
+                    <div class="vertical-arrow">↓</div>
+                    <div class="pipeline-step">
+                        <div class="box final-output">Final<br>Model B</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 4: Technical Constraints -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">⚠️ Phase 4: Technical Constraints</div>
+            <div class="phase-subtitle">Challenges & Solutions</div>
+        </div>
+        
+        <div class="content">
+            <div class="flow-container">
+                <div class="problems-grid">
+                    <div class="box problem-box">Colab Resource<br>Limitations</div>
+                    <div class="box problem-box">GPU Session<br>Instability</div>
+                    <div class="box problem-box">Memory<br>Bottlenecks</div>
+                    <div class="box problem-box">Training Duration<br>Constraints</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="solutions-grid">
+                    <div class="box solution-box">Checkpoint<br>System</div>
+                    <div class="box solution-box">Lightweight<br>Models</div>
+                    <div class="box solution-box">Epoch<br>Optimization</div>
+                    <div class="box solution-box">Data<br>Sampling</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 5: Evaluation & Deployment -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">📈 Phase 5: Evaluation & Deployment</div>
+            <div class="phase-subtitle">Model Performance & Results</div>
+        </div>
+        
+        <div class="content">
+            <div class="flow-container">
+                <div class="flow-row">
+                    <div class="box model-box">Final<br>Model A</div>
+                    <div class="box model-box">Final<br>Model B</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box process-box">Test<br>Predictions</div>
+                </div>
+                
+                <div class="vertical-arrow">↓</div>
+                
+                <div class="flow-row">
+                    <div class="box trouble-indicator">Missing<br>Predictions</div>
+                    <div class="arrow">→</div>
+                    <div class="box solution-box">Fill with zeros<br>submission.csv</div>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric">📊 Dataset: 10K/33K samples</div>
+                    <div class="metric">🎯 Classes: 396 vehicle models</div>
+                    <div class="metric">⚡ Platform: Colab-optimized</div>
+                    <div class="metric">🔧 Method: Transfer Learning</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 6: Future Enhancements -->
+    <div class="page">
+        <div class="page-header">
+            <div class="project-title">🚗 Used Car Classification Project</div>
+            <div class="phase-title">🚀 Phase 6: Future Enhancements</div>
+            <div class="phase-subtitle">Roadmap for Improved Performance</div>
+        </div>
+        
+        <div class="content">
+            <div class="flow-container">
+                <div class="future-grid">
+                    <div class="box process-box">Cloud Setup<br>(AWS/GCP)</div>
+                    <div class="box process-box">Use Full Dataset<br>Training</div>
+                    <div class="box process-box">Advanced Models<br>(ViT, ConvNeXt)</div>
+                    <div class="box process-box">Ensemble<br>Techniques</div>
+                    <div class="box process-box">Combine Models<br>(Detection + Classification)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

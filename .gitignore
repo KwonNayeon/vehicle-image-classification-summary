@@ -7,5 +7,6 @@ assets/*
 !assets/ResNet_Result_en.png
 !assets/dacon_leaderboard.png
 !assets/project_architecture.pdf
+!assets/project_architecture.html
 
 code/*
