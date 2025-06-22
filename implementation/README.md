@@ -1,17 +1,20 @@
-# 기술 구현 / Technical Implementation
+# 기술 구현 | Technical Implementation
 
-이 디렉토리는 슈도코드를 포함합니다. / This directory contains pseudocode.
+이 디렉토리는 슈도코드를 포함합니다.
 
-## 파일 구성 / Files
+*This directory contains pseudocode.*
 
-- `image_preprocessing.md` - 이미지 전처리 파이프라인 / Image preprocessing pipeline
-- `efficientnet_pseudocode.md` - EfficientNet 모델 구조 / EfficientNet model structure
-- `resnet_model.md` - ResNet 모델 구조 / ResNet model structure
+## 파일 구성 | Files
 
-## 참고사항 / Notes
+- `image_preprocessing.md` - 이미지 전처리 파이프라인 | Image preprocessing pipeline
+- `efficientnet_pseudocode.md` - EfficientNet 모델 구조| EfficientNet model structure
+- `resnet_model.md` - ResNet 모델 구조| ResNet model structure
 
-⚠️ **실제 소스 코드는 대회 규정상 공유하지 않습니다.**  
-**Actual source code cannot be shared due to competition rules.**
+## 참고사항 | Notes
+
+⚠️ 실제 소스 코드는 대회 규정상 공유하지 않습니다.
+
+*Actual source code cannot be shared due to competition rules.*
 
 - 슈도코드는 한국어로 작성되었으며, 영어 버전은 추후 업데이트 예정입니다.  
 - Pseudocode is written in Korean, English version will be updated
