@@ -46,6 +46,11 @@
 
 ---
 
+## 프로젝트 워크플로우
+**[프로젝트 구조도 (영문)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)** - 단계별 개발 과정 시각화
+
+---
+
 ## 핵심 전략
 
 ### 1. 초기 전략: 2단계 접근법
@@ -66,11 +71,6 @@
 - Google Colab 환경의 GPU 메모리 제한으로 전체 데이터셋(33,000장) 학습 불가
 - **데이터 최적화**: 클래스 균형을 고려하여 10,000장으로 샘플링
 - ResNet 및 EfficientNet 기반 분류 모델로 실험 방향 전환
-
----
-
-## 프로젝트 워크플로우
-**[프로젝트 구조도 (영문)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)** - 단계별 개발 과정 시각화
 
 ---
 
