@@ -2,7 +2,7 @@
 
 ## 📋 EfficientNet-B0 슈도코드
 
-### 1. **라이브러리 임포트**
+### 1. **Setup**
    * torch, torchvision 등 PyTorch 관련 모듈
    * 이미지 처리용 라이브러리
    * efficientnet_pytorch에서 EfficientNet 불러오기

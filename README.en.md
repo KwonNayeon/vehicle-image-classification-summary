@@ -14,7 +14,11 @@
 
 ## Project Overview
 
-TBC
+- **Topic**: AI model development for used car model classification from images
+- **Objective**: Develop an AI model to accurately classify various used car models from image data and submit to Dacon competition
+- **Dataset Structure:**
+    - Training data: 33,137 images, 396 classes
+    - Evaluation data: 8,258 images
 
 ---
 
@@ -44,18 +48,37 @@ TBC
 
 ## Key Strategies
 
-TBC
+### 1. Initial Strategy: Two-Stage Approach
+
+**Brand Logo-Based Hierarchical Classification Design**
+- **Stage 1**: Brand logo detection and classification within vehicle images using YOLO model
+- **Stage 2**: Detailed vehicle model classification using full vehicle images
+
+**Labeling Strategy**
+- Established bounding box criteria and proceeded with data labeling through Roboflow
+- Attempted combination of manual labeling and AI auto-labeling (Auto Annotate)
+- **Constraint**: Failed to implement due to Roboflow Auto Annotate feature requiring paid tokens
+
+### 2. Pivot Strategy: Single-Stage Classification Model
+
+**Strategic Shift Due to Resource Constraints**
+- YOLO-based two-stage approach was postponed due to excessive time and resource consumption
+- Unable to train on full dataset (33,000 images) due to GPU memory limitations in Google Colab environment
+- **Data Optimization**: Sampled down to 10,000 images considering class balance
+- Shifted experimental direction to ResNet and EfficientNet-based classification models
 
 ---
 
 ## Learn More
 - **[Summary Report](summary_report.en.md)** - Problem definition and overall results
 - **[Troubleshooting Process](troubleshooting.en.md)** - Technical/data challenges and solutions
-- **[Technical Implementation](implementation/)** - Pseudocode and architecture
+- **[Technical Implementation](implementation/)** - Pseudocode
 - **[Results Charts](assets/)** - Model performance and training process visualization
 
 ---
 
 ## Notes
 
-- This summary respects competition confidentiality by excluding raw data and source code.
+- Original dataset and source code are confidential due to competition regulations
+- Model submission follows `sample_submission.csv` format containing class-wise prediction probabilities
+- Evaluation metric: Log Loss (analyzed using scikit-learn)

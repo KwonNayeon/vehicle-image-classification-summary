@@ -2,7 +2,7 @@
 
 ## 📋 ResNet50 슈도코드
 
-### 1. **라이브러리 임포트 및 초기 설정**
+### 1. **Setup**
   * torch, torchvision, PIL, sklearn 등 필요 모듈
   * 구글 드라이브 마운트 및 opencv 설치
   * 시드 고정으로 재현성 확보
