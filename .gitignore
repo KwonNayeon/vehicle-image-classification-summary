@@ -4,6 +4,7 @@ assets/*
 !assets/thumbnail-en.jpg
 !assets/thumbnail-ko.jpg
 !assets/ResNet_Result.jpg
+!assets/ResNet_Result_en.png
 !assets/dacon_leaderboard.png
 
 code/*
