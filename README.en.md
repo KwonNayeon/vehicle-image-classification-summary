@@ -46,6 +46,11 @@
 
 ---
 
+## Project Workflow
+**[Architecture Flowchart](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)** - Complete project pipeline visualization
+
+---
+
 ## Key Strategies
 
 ### 1. Initial Strategy: Two-Stage Approach

@@ -1,5 +1,7 @@
 # ⚠️ Troubleshooting
 
+> **Visual Overview:** Check out our [Architecture Flowchart](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html) to understand where these issues occurred in the pipeline.
+
 ## 1. **Limitations of Roboflow Auto-labeling**
 - **Issue:** Roboflow’s auto-labeling (AI-assisted bounding box generation) requires **paid tokens**, making it unavailable in free-tier environments.
 - **Actions Taken:**

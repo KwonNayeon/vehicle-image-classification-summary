@@ -103,6 +103,7 @@
 ## 4️⃣ 참고 사항
 
 **관련 문서**
+- [프로젝트 구조도 (영문)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)
 - [문제해결 과정](troubleshooting.md)
 - [기술 구현](implementation/)
 

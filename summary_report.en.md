@@ -103,6 +103,7 @@
 ## 4️⃣ Additional Notes
 
 **Related Files**
+- [Architecture Flowchart](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)
 - [Troubleshooting](troubleshooting.en.md)  
 - [Technical Implementation](implementation/)
 

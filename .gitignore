@@ -1,12 +1,6 @@
 .DS_Store
 
-assets/*
-!assets/thumbnail-en.jpg
-!assets/thumbnail-ko.jpg
-!assets/ResNet_Result.jpg
-!assets/ResNet_Result_en.png
-!assets/dacon_leaderboard.png
-!assets/project_architecture.pdf
-!assets/project_architecture.html
+assets/confusion_matrix.png
+assets/training_curve.png
 
 code/*

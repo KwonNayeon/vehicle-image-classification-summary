@@ -1,5 +1,7 @@
 # ⚠️ Troubleshooting
 
+> **전체 과정 보기:** [프로젝트 구조도 (영문)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)에서 해당 이슈가 프로젝트의 어느 단계에서 발생했는지 볼 수 있습니다.
+
 ## 1. **Roboflow Auto-label 제한**
 * **문제:** Roboflow에서 제공하는 **AI 기반 자동 바운딩 박스 라벨링(Auto-label)** 기능은 **유료 토큰이 필요**하여, 무료 환경에서는 사용이 불가능함
 * **해결 시도:**

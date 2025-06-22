@@ -69,6 +69,11 @@
 
 ---
 
+## 프로젝트 워크플로우
+**[프로젝트 구조도 (영문)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)** - 단계별 개발 과정 시각화
+
+---
+
 ## 자세한 내용
 
 - **[결과 요약](summary_report.md)** - 문제 정의와 전체 결과 요약
