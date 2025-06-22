@@ -20,7 +20,7 @@ assets/
 
 ### 프로젝트 구조도 | Project Workflow Chart
 
-**프로젝트 구조도 (영문):** [Architecture Flowchart](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)
+**프로젝트 구조도 (영문):** [Architecture Flowchart (English)](https://kwonnayeon.github.io/used-car-model-classification/assets/project_architecture.html)
 
 - **6단계 개발 과정** 시각화 | *6-phase development process visualization*
 - **문제 해결 과정** 포함 | *Includes problem-solving steps*
