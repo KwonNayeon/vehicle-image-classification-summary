@@ -22,6 +22,15 @@
 
 ---
 
+## 팀 정보
+- [@HaileysArchives](https://github.com/HaileysArchives)
+- [@KwonNayeon](https://github.com/KwonNayeon)
+
+**프로젝트 기간**: 2025.05 - 2025.06
+**협업 내용**: AI 모델 개발, 데이터 전처리, 분석
+
+---
+
 ## 사용 기술
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)

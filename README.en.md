@@ -18,6 +18,15 @@ TBC
 
 ---
 
+## Team Information
+- [@HaileysArchives](https://github.com/HaileysArchives)
+- [@KwonNayeon](https://github.com/KwonNayeon)
+
+**Project Period**: May 2025 - June 2025  
+**Collaboration**: AI Model Development, Data Preprocessing, Analysis
+
+---
+
 ## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
