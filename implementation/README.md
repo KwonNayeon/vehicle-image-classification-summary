@@ -1,6 +1,6 @@
 # 기술 구현 | Technical Implementation
 
-이 디렉토리는 슈도코드를 포함합니다.
+이 디렉토리는 슈도코드를 포함하고 있습니다.
 
 *This directory contains pseudocode.*
 
