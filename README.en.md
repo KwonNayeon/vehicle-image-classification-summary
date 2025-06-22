@@ -71,7 +71,7 @@
 
 ## Learn More
 - **[Summary Report](summary_report.en.md)** - Problem definition and overall results
-- **[Troubleshooting Process](troubleshooting.en.md)** - Technical/data challenges and solutions
+- **[Troubleshooting](troubleshooting.en.md)** - Technical/data challenges and solutions
 - **[Technical Implementation](implementation/)** - Pseudocode
 - **[Results Charts](assets/)** - Model performance and training process visualization
 

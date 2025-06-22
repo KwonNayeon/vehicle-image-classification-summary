@@ -103,8 +103,8 @@
 ## 4️⃣ Additional Notes
 
 **Related Files**
-- [Troubleshooting Report](troubleshooting.en.md)  
-- [Model Implementation](implementation/)
+- [Troubleshooting](troubleshooting.en.md)  
+- [Technical Implementation](implementation/)
 
 **Competition Compliance**
 - Original dataset and source code kept private in accordance with competition rules  
