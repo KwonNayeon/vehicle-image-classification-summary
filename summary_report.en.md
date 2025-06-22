@@ -56,7 +56,7 @@
 - Converted images to square shape and resized to 224x224
 - Sampled 10,000 images with at least 20 per class for balance
 - Implemented checkpoint saving and best model saving logic  
-- Pseudocode available in the [implementation/](implementation/) folder
+- Pseudocode available in the [implementation](implementation/) folder
 
 ### 3. Training Results
 
@@ -74,7 +74,7 @@
 
 **ResNet50 Training Curve**
 
-![ResNet Results](assets/ResNet_Result_en.jpg)
+![ResNet Results](assets/ResNet_Result_en.png)
 
 **Key Metrics**
 - **Loss Reduction:** Train Loss dropped from 6.21 → 5.30, with fluctuations in validation loss  
