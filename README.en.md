@@ -19,10 +19,11 @@ TBC
 ---
 
 ## Team Information
-- [@HaileysArchives](https://github.com/HaileysArchives)
-- [@KwonNayeon](https://github.com/KwonNayeon)
+- 👩🏻‍💻 [@HaileysArchives](https://github.com/HaileysArchives)
+- 👩🏻‍💻 [@KwonNayeon](https://github.com/KwonNayeon)
 
-**Project Period**: May 2025 - June 2025  
+**Project Period**: May 2025 - June 2025
+
 **Collaboration**: AI Model Development, Data Preprocessing, Analysis
 
 ---
