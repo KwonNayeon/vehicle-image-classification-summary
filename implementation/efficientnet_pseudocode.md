@@ -1,6 +1,6 @@
 # EfficientNet-B0 기반 중고차 분류 모델
 
-## 📋 EfficientNet-B0 수도코드
+## 📋 EfficientNet-B0 슈도코드
 
 ### 1. **라이브러리 임포트**
    * torch, torchvision 등 PyTorch 관련 모듈
