@@ -19,6 +19,6 @@
 - 슈도코드는 한국어로 작성되었으며, 영어 버전은 추후 업데이트 예정입니다.  
 - Pseudocode is written in Korean, English version will be updated
 
-이 파일들은 원본 코드 대신 기술적 접근방식을 설명하기 위해 작성되었습니다.  
+슈도코드는 원본 코드를 대신하여 기술적 접근방식을 설명하기 위해 작성되었습니다.  
 
 *These files are written to demonstrate technical approaches instead of original code.*
