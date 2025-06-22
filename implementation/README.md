@@ -7,8 +7,8 @@
 ## 파일 구성 | Files
 
 - `image_preprocessing.md` - 이미지 전처리 파이프라인 | Image preprocessing pipeline
-- `efficientnet_pseudocode.md` - EfficientNet 모델 구조| EfficientNet model structure
-- `resnet_model.md` - ResNet 모델 구조| ResNet model structure
+- `efficientnet_pseudocode.md` - EfficientNet 모델 구조 | EfficientNet model structure
+- `resnet_model.md` - ResNet 모델 구조 | ResNet model structure
 
 ## 참고사항 | Notes
 
@@ -20,4 +20,5 @@
 - Pseudocode is written in Korean, English version will be updated
 
 이 파일들은 원본 코드 대신 기술적 접근방식을 설명하기 위해 작성되었습니다.  
-These files are written to demonstrate technical approaches instead of original code.
+
+*These files are written to demonstrate technical approaches instead of original code.*
