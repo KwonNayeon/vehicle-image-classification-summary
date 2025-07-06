@@ -57,10 +57,6 @@
 - Use **data augmentation** to increase pattern diversity and improve generalization with limited samples.
 - Improve sampling strategy or leverage **distributed training (Multi-GPU, TPU)** to utilize the full dataset.
 
-## Automated Submission and Validation Enhancements
-- Implement logic to **detect and fill in missing class predictions** when generating `submission.csv`.
-- Maintain submission format integrity by inserting zero-probability predictions for any omitted classes.
-
 ---
 
 # 📈 Modeling Strategy Enhancements
