@@ -73,5 +73,5 @@
 - Explore **Vision Transformers (ViT)** and **ConvNeXt** using pretrained weights.
 - For high-performance scenarios, test larger models like **ConvNeXt-Large** when resources allow.
 - Maintain a dual-track strategy:  
-  - Use lightweight models in constrained environments  
-  - Reserve heavyweight models for accuracy-focused experiments
+  - Use lightweight models in constrained environments.
+  - Reserve heavyweight models for accuracy-focused experiments.
