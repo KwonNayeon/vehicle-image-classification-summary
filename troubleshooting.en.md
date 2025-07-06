@@ -40,7 +40,7 @@
   - Performed **random sampling** with a target of at least **20 images per class**.
   - Conducted **noise image removal** for quality control prior to training.
 - **Root Cause:**
-  - Random sampling included exactly **20 images per class**.
+  - Random sampling included at least **20 images per class**.
   - However, the model produced **no outputs for certain classes**, likely due to **insufficient feature learning** or **suppression during inference**.
 - **Outcome:**
   - Since some classes were missing from model predictions, zeroes were inserted for those classes to comply with the required submission format.
