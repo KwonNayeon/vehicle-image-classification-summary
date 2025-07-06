@@ -37,15 +37,13 @@
 ## 4. **Class Omission Due to Subsampling**
 - **Issue:** Reducing the dataset to 10,000 images (from 33,137 images across 396 classes) resulted in **missing class predictions** during evaluation.
 - **Sampling Details:**
-  - Performed **random sampling** with a target of at least **20 images per class**, where possible.
+  - Performed **random sampling** with a target of at least **20 images per class**.
   - Conducted **noise image removal** for quality control prior to training.
 - **Root Cause:**
-  - Random sampling led to **class imbalance and occasional omissions**.
-  - As a result, the model produced **no outputs for certain classes** it hadn't seen during training.
+  - Random sampling included exactly **20 images per class**.
+  - However, the model produced **no outputs for certain classes**, likely due to **insufficient feature learning** or **suppression during inference**.
 - **Outcome:**
-  - Implemented logic to **automatically detect and handle missing class predictions** in `submission.csv`.
-  - Missing predictions were filled with zeroes to match submission format requirements.
-  - Due to GPU and time limitations, training continued on the sampled dataset.
+  - Since some classes were missing from model predictions, zeroes were inserted for those classes to comply with the required submission format.
 
 ---
 
@@ -53,7 +51,7 @@
 
 ## Environment and Resource Optimization
 - Move to **Colab Pro+**, **AWS**, or **GCP** for more stable long-term training environments.
-- Set up **automated checkpointing and session recovery** (e.g., using timers or periodic save hooks) to mitigate disconnections.
+- Set up environments with **high-performance GPUs** (e.g., **A100**, **V100**) to support longer training and larger models.
 
 ## Advanced Data Utilization
 - Use **data augmentation** to increase pattern diversity and improve generalization with limited samples.
