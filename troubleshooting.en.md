@@ -25,7 +25,7 @@
 - **Issue:** GPU sessions in Colab frequently disconnected during long training runs, disrupting model convergence.
 - **Actions Taken:**
   - Upgraded to **Colab Pro** for better GPU access.
-  - Trained **EfficientNetB7** and **ResNet**, but training remained slow (2–3 hours per epoch).
+  - Trained **EfficientNetB7** and **ResNet50**, but training remained slow (2–3 hours per epoch).
   - To address this:
     - Reduced **EfficientNet epochs from 50 to 20**
     - Reduced **ResNet epochs from 25 to 5**
