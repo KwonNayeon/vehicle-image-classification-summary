@@ -2,7 +2,7 @@
 
 # Used Car Model Classification Project
 
-[한국어](README.md) | English
+English | [한국어](README.md)
 
 > ⚠️ **Due to competition rules, dataset and source code cannot be shared.**
 
